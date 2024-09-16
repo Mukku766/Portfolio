@@ -74,7 +74,7 @@ export const Banner = () => {
                    <div style={{marginBottom:"15px"}}> {`Hi! I'm Jagdeep`}{" "} </div>
                     <div 
                       className="txt-rotate"
-                      dataPeriod="1000"
+                      dataPeriod="111"
                       data-rotate='[ "Web Developer", "Social Media Expert", "UI/UX Designer" ]'
                     >
                       <span className="wrap" >{text}</span>
@@ -83,7 +83,7 @@ export const Banner = () => {
                   <p>
                   Elevate your business with top-notch graphics, website, and application solutions. Seeking a professional and creative high-quality logo for your company, business, website, or product? You've come to the right place. We specialize in delivering outstanding designs to boost your growth. Place your order now: +91 82679 94323.
                   </p>
-                  <a href='#connect' style={{textDecoration:"none"}}> <button >
+                  <a href='https://wa.me/message/3FGKOYMLNROBH1' target="blank" style={{textDecoration:"none"}}> <button >
                     Let’s Connect <ArrowRightCircle size={25} />
                   </button></a>
                 </div>

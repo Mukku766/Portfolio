@@ -1,44 +1,119 @@
 import { Container, Row, Col, Tab, Nav } from "react-bootstrap";
 import { ProjectCard } from "./ProjectCard";
-import projImg1 from "../assets/img/project-img1.png";
-import projImg2 from "../assets/img/project-img2.png";
-import projImg3 from "../assets/img/project-img3.png";
+import QbitLog from "../assets/project-img/Qbit Log.png";
+import DocsApp from "../assets/project-img/Docs app.png";
+import Business from "../assets/project-img/Business.png";
+import Productivity from "../assets/project-img/Productivity.png";
+import UtubeLite from "../assets/project-img/Utube-Lite.png";
+import Alpha from "../assets/project-img/Alpha.png";
+import QuantmNews from "../assets/project-img/QuantmNews.png";
+import Tongue from "../assets/project-img/Tongue.png";
+import Deer from "../assets/project-img/Deer.png";
+import Farm from "../assets/project-img/Farm.png";
+import Quantm from "../assets/project-img/Quantm.png";
+import Optic from "../assets/project-img/optic.png";
+import Ragnar from "../assets/project-img/ragnar.png"
+import Quant from "../assets/project-img/quantmIT.png"
+import Autostack from "../assets/project-img/autostack.png"
+import Nesto from "../assets/project-img/nesto.png"
+
 import colorSharp2 from "../assets/img/color-sharp2.png";
 import "animate.css";
 import TrackVisibility from "react-on-screen";
 
 export const Projects = () => {
-  const projects = [
+  const Web_Projects = [
+    {
+      title: "Michael Phillips",
+      description: "Business Coach Website",
+      imgUrl: Business,
+      href: "https://business-coach.bz1media.com/",
+    },
+    {
+      title: "Michelle Taylor",
+      description: "Productivity Coach Website",
+      imgUrl: Productivity,
+      href: "https://productivity-coach.bz1media.com/",
+    },
+    {
+      title: "NestoHub",
+      description: "An Online Space To Connect Builders & Brokers",
+      imgUrl: Nesto,
+      href: "https://nestohub.in/",
+    },
+    {
+      title: "U-tube Lite",
+      description: "YouTube Clone in React.js",
+      imgUrl: UtubeLite,
+      href: "https://newtube-eight.vercel.app/",
+    },
+    {
+      title: "Docs App",
+      description: "Platform for daily Docs",
+      imgUrl: DocsApp,
+      href: "https://docs-app-black.vercel.app/",
+    },
     {
       title: "Qbit Logs",
-      description: 'Platform for "Daily logs Update"',
-      imgUrl: projImg1,
+      description: "QuantmHill Platform to manage thier employes",
+      imgUrl: QbitLog,
+      href: "https://qbit-final.vercel.app/",
+    },
+  ];
+
+  const Design_Projects = [
+    {
+      title: "Alpha Blue",
+      description: "Alpha Blue is Shipping & Clearing Company",
+      imgUrl: Alpha,
     },
     {
-      title: "Business Startup",
-      description: "Design & Development",
-      imgUrl: projImg2,
+      title: "Tongue Affair",
+      description: "Tongue Affair is a brand that provides cloud services",
+
+      imgUrl: Tongue,
     },
     {
-      title: "Business Startup",
-      description: "Design & Development",
-      imgUrl: projImg3,
+      title: "Effutu Dreams",
+      description: "They are Proud Deer Hunters",
+      imgUrl: Deer,
     },
     {
-      title: "Business Startup",
-      description: "Design & Development",
-      imgUrl: projImg1,
+      title: "Ntimbe Farms",
+      description: "Farm that produce organic food on large scale",
+      imgUrl: Farm,
     },
     {
-      title: "Business Startup",
-      description: "Design & Development",
-      imgUrl: projImg2,
+      title: "QuantmHill",
+      description: "Well Known IT Company in India",
+      imgUrl: Quantm,
     },
     {
-      title: "Business Startup",
-      description: "Design & Development",
-      imgUrl: projImg3,
+      title: "Optic EL ALIA",
+      description: "Famous glasses store in Dubai",
+      imgUrl: Optic,
     },
+  ];
+  const Social_Projects = [
+    {
+      title: "Ragnar Studios",
+      description: " More than a Designing Agency",
+      imgUrl: Ragnar,
+      href:"https://www.instagram.com/ragnar.studios/"
+    },
+    {
+      title: "QuantmHill",
+      description: "QuantmHill is a IT Company from India",
+
+      imgUrl: Quant,
+      href:"https://www.instagram.com/quantmhill/"
+    },
+    {
+      title: "Stack Auto",
+      description: "Well Known organization that Resell Cars",
+      imgUrl: Autostack,
+      href:"https://www.instagram.com/thestackauto/"
+    }
   ];
 
   return (
@@ -84,14 +159,14 @@ export const Projects = () => {
                     >
                       <Tab.Pane eventKey="first">
                         <Row>
-                          {projects.map((project, index) => {
+                          {Web_Projects.map((project, index) => {
                             return <ProjectCard key={index} {...project} />;
                           })}
                         </Row>
                       </Tab.Pane>
                       <Tab.Pane eventKey="second">
                         <Row>
-                          {projects.map((project, index) => {
+                          {Design_Projects.map((project, index) => {
                             return <ProjectCard key={index} {...project} />;
                           })}
                         </Row>
@@ -99,7 +174,7 @@ export const Projects = () => {
 
                       <Tab.Pane eventKey="third">
                         <Row>
-                          {projects.map((project, index) => {
+                          {Social_Projects.map((project, index) => {
                             return <ProjectCard key={index} {...project} />;
                           })}
                         </Row>

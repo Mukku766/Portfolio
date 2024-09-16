@@ -37,7 +37,7 @@ export const NavBar = () => {
       <Navbar expand="md" className={scrolled ? "scrolled" : ""}>
         <Container>
           <Navbar.Brand href="/">
-            <img src={logo}  alt="Logo" style={{height:"50px", width:"auto", padding:"6px"}} />
+            <img src={logo}  alt="Logo" style={{height:"70px", width:"auto", padding:"10px"}} />
           </Navbar.Brand>
           <Navbar.Toggle aria-controls="basic-navbar-nav">
             <span className="navbar-toggler-icon"></span>
@@ -54,9 +54,9 @@ export const NavBar = () => {
                 <a href="https://www.instagram.com/ragnar.studios?utm_source=ig_web_button_share_sheet&igsh=ZDNlZDc0MzIxNw==" target="blank"><img src={navIcon3} alt="" /></a>
                 <a href="https://www.linkedin.com/in/jagdeep-singh-rana-286809218/" target="blank"><img src={navIcon1} alt="" /></a>
               </div>
-              <HashLink to='#connect'>
-                <button className="vvd" style={{borderRadius:"100px"}}><span>Let’s Connect</span></button>
-              </HashLink>
+              <a href="https://wa.me/message/3FGKOYMLNROBH1" target="_blank">
+              <button  onclick="window.location.href='https://wa.me/message/3FGKOYMLNROBH1';" className="vvd" style={{borderRadius:"100px"}}><span>Let’s Connect</span></button>
+              </a>
             </span>
           </Navbar.Collapse>
         </Container>
